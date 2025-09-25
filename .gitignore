@@ -1,0 +1,20 @@
+# VS Files
+.vs/
+*.user
+*.suo
+*.sln.docstates
+
+# Rider/JetBrains
+.idea/
+*.iml
+
+# Unity (KSP)
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uilds/
+[Bb]uild/
+Assets/AssetStoreTools*
+
+# OS spec
+.DS_Store
+Thumbs.db

@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compileModToGD",
+            "command": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\csc.exe",
+            "type": "shell",
+            "args": [
+                "/target:library",
+                "/debug",
+                "/unsafe",
+                "/out:GameData\\Elysium\\API\\ElysiumKSP.dll",
+                "src\\Elysium.cs",
+                "src\\Elysium.Core.cs",
+                "src\\Elysium.Optimizer.cs",
+                "src\\Elysium.Optional.cs",
+                "/reference:include\\Assembly-CSharp.dll",
+                "/reference:include\\UnityEngine.dll",
+                "/reference:include\\UnityEngine.CoreModule.dll",
+                "/reference:include\\UnityEngine.UI.dll",
+                "/reference:include\\UnityEngine.AnimationModule.dll",
+                "/reference:include\\UnityEngine.PhysicsModule.dll",
+                "/reference:include\\UnityEngine.ParticleSystemModule.dll",
+                "/reference:include\\UnityEngine.IMGUIModule.dll",
+                "/reference:include\\UnityEngine.TextRenderingModule.dll"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
